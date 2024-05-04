@@ -1,0 +1,376 @@
+/*HEAD_STYLE
+padding-bottom: 540px;
+overflow-x: hidden;
+
+*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(216, 216, 216);
+    padding: 0;
+    margin: 0;
+}
+
+
+/*NAVIGATION_STYLE*/
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 0 9px 0 rgb(116, 116, 116);
+    position: sticky;
+}
+
+.navigation .nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation .nav-items .logo a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: rgb(22, 128, 66);
+}
+
+.navigation .nav-items .logo a span {
+    color: black;
+}
+
+.navigation .nav-items ul {
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.navigation .nav-items ul li {
+    list-style-type: none; 
+}
+
+.navigation .nav-items ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.navigation .nav-button button {
+    border: none;
+    padding: 1rem 3rem;
+    background-color: rgb(22, 128, 66);
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*
+.navigation-1{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 9px rgb(116, 116, 116);
+    margin-top: -30px ;
+    margin-left: -10px;
+    margin-right: -20px;
+}
+    
+
+
+.navigation-1 a{
+    text-decoration: none;
+}
+
+.navigation-1 h1{
+    position: relative;
+    color: rgb(22, 128, 66);
+    font-size: 40px;
+    text-align: left;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+
+.navigation-1 span{
+    color: black;
+}
+
+.navigation-1 ul{
+    padding: 5px 0; 
+    float: left;
+    overflow: hidden;
+    margin-left: 170px;
+    margin-top: -80px;
+}
+
+.navigation-1 ul li {
+    font-weight: bold;
+    display: inline;
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.navigation-1 ul li a{
+    color: black;
+    
+    
+}
+
+.navigation-2 a{
+    float: right;
+    color: white;
+    background-color: rgb(22, 128, 66);
+    padding: 15px 90px;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-top: -90px;
+    cursor: pointer;
+    text-decoration: none;
+}
+*/
+
+
+
+/*BLOCKS_STYLE*/
+.blocks-1{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    box-shadow: 0 0 10px 0 rgb(29, 29, 29);
+    
+    
+   /*
+    position: relative;
+    display: block;
+    width: 35%;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    padding: 150px 800px 150px 110px;
+    margin-left: -10px;
+    margin-top: -60px;
+    margin-bottom: -10px;
+   box-shadow: 0 3px 9px rgb(116, 116, 116);
+   */
+      
+}
+
+.blocks-1 .items-1 h1{
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+}
+
+.blocks-1 .items-1 h4{
+        color: rgb(22, 128, 66)
+}
+
+.blocks-1 .items-1 p{
+    color: rgb(0, 0, 0);
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.blocks-1 .items-1 a{
+    background-color: rgb(22, 128, 66);
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    
+}
+/*blocks-2 style*/
+.blocks-2 {
+    margin: 1rem 0 3rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*blocks-2-A style*/
+.blocks-2 .blocks-2-A{
+    background-color: white;
+    padding: 2rem 0 ;
+    margin-left: 7rem;
+    border-radius: 4%;
+}
+
+/*blocks-2-A img style*/
+.blocks-2 .blocks-2-A img {
+    display: flex;
+    width: 15rem;
+    height: auto;
+}
+
+/*blocks-2-B style*/
+.blocks-2 .blocks-2-B{
+    background-color: white;
+    border-radius: 10px;
+    width:55%;
+    padding: 1rem 0 4rem 0;
+    margin-right: 7rem;
+}
+
+/*blocks-2-B style*/
+.blocks-2 .blocks-2-B h1{
+    color: rgba(229, 129, 7, 0.879);
+    text-decoration: underline;
+    margin-left: 6rem;
+}
+
+.blocks-2 .blocks-2-B p{
+    margin-left: 6rem;
+    width: 35rem;
+}
+
+
+/*blocks-2-B img style*/
+.blocks-2-B .blocks-2-B-img{
+    margin-left: 6rem;
+}
+
+.blocks-2-B .blocks-2-B-img img{
+    border: 10px solid rgb(171, 171, 171);
+    border-top-right-radius: 55px;
+    border-bottom-left-radius: 55px;
+    width: 20%;
+    height: auto;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    display: inline;
+}
+
+
+
+
+/*style page ABOUT*/
+
+/*produits*/
+.page-produits .title h1{
+    color: rgb(22, 128, 66);
+    text-align: center;
+}
+
+.page-produits .produits {
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 1rem 9rem;
+}
+
+.page-produits .produits .aliment{
+    box-shadow: 0  2px 2px 2px rgb(172, 172, 172);
+    text-align: center;
+    background-color: rgb(241, 241, 237);
+    border-radius: 1rem;
+    line-height: 3px;
+    padding: 1rem 0 0 0;
+    overflow-x: hidden;
+
+    
+}
+
+.page-produits .produits .aliment img{
+    background-color: white;
+    width: 70%;
+    height: auto;
+}
+
+.page-produits .produits .aliment h2{
+    color: rgb(22, 128, 66); 
+}
+
+.page-produits .produits .aliment p{
+    color: rgb(204, 204, 204);
+}
+
+.page-produits .produits .aliment button{
+    color: white;
+    background-color: rgb(22, 128, 66);
+    border: none;
+    padding: 1rem 6rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    
+    
+    
+}   
+
+
+
+
+
+
+
+.background-img{
+    background-image: url("../image/background.jpg");
+     
+}
+.background-img .temoignage{
+   background-color: rgba(0, 0, 0,0.8);
+
+}
+
+.background-img .temoignage .description{
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+ .background-img .temoignage .avis-client {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 0rem 0 1rem 0;
+    margin: 0 18rem;
+
+    
+    
+}
+
+.background-img .temoignage .avis-client .client{
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.background-img .temoignage .avis-client .client img{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.background-img .temoignage .avis-client .client h1{
+    color: rgb(22, 128, 66);
+}
+
+.background-img .temoignage .avis-client .client p{
+    margin: 0 1rem;
+}
+
+
+.image-produits{
+    margin-bottom: 5rem;
+}
+
+
+
+
+

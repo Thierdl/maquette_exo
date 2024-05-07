@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="navigation">
-        <div class="nav-items">
-            <div class="logo">
-                <a href="">
-                    DI<span>MS</span>
-                </a>
-            </div>
-            <div class="nav-link">
-                <ul>
-                    <li>
-                        <a href="">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="includ/produits.html">Produit</a>
-                    </li>
-                    <li>
-                        <a href="">Service</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="nav-button">
-            <button>S'abonner</button>
-        </div>
-    </div>
 
-
-
+<section class="section-1">
+    <!--STRUCTURE_PAGE_PRODUITS-->
     <div class="page-produits">
         <div class="title">
             <h1>Les Produits</h1>
         </div>
         
+        <!--blocks_des_produits-->
         <div class="produits">
             <div class="aliment">
                 <img src="../image/Markal - Couscous Demi-complet 500g.jpg" alt="produits 1">
@@ -77,7 +50,7 @@
             </div>
 
             <div class="aliment">
-                <img src="../image/Markal - Couscous Demi-complet 500g.jpg" alt="produits 1">
+                <img src="../image/jus.png" alt="produits 1">
                 <h2>Bouye</h2>
                 <p>Produit 100% Naturel</p>
                 <h3>25000 FCFA</h3>
@@ -85,7 +58,7 @@
             </div>
 
             <div class="aliment">
-                <img src="../image/Markal - Couscous Demi-complet 500g.jpg" alt="produits 1">
+                <img src="../image/jus.png" alt="produits 1">
                 <h2>Gingembre</h2>
                 <p>Produit 100% Naturel</p>
                 <h3>25000 FCFA</h3>
@@ -93,7 +66,7 @@
             </div>
 
             <div class="aliment">
-                <img src="../image/Markal - Couscous Demi-complet 500g.jpg" alt="produits 1">
+                <img src="../image/jus.png" alt="produits 1">
                 <h2>Bissap Rouge</h2>
                 <p>Produit 100% Naturel</p>
                 <h3>25000 FCFA</h3>
@@ -101,21 +74,22 @@
             </div>
 
             <div class="aliment">
-                <img src="../image/Markal - Couscous Demi-complet 500g.jpg" alt="produits 1">
+                <img src="../image/jus.png" alt="produits 1">
                 <h2>Bouye</h2>
                 <p>Produit 100% Naturel</p>
                 <h3>25000 FCFA</h3>
                 <button>Ajouter</button>
             </div>
         </div>
+    </div>
 
+    <!--blocks_temoignage-->
     <div class="background-img">
         <div class="temoignage">
             <div class="description">
                 <h1>Temoignage</h1>
                 <p>TemoignageTemoignageTemoignageTemoignageTemoignage</p>
             </div>
-
 
             <div class="avis-client">
                 <div class="client">
@@ -151,14 +125,38 @@
         </div>
     </div>
 
+    <!--blocks_description_et_img-->
     <div class="image-produits">
-        <p></p>
-        <img src="" alt="img-produit">
-        <img src="" alt="img-produit">
-        <img src="" alt="img-produit">
-        <img src="" alt="img-produit">
-        <img src="" alt="img-produit">
+
+        <div class="description">
+            <img src="../image/pub.png" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rem, veritatis asperiores nam aut neque voluptatum beatae
+                eaque atque iure dolore consectetur earum possimus similique 
+                eveniet obcaecati voluptatem officiis! Sed, obcaecati.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Rem, veritatis asperiores nam aut neque voluptatum beatae
+                eaque atque iure dolore consectetur earum possimus similique 
+                eveniet obcaecati voluptatem officiis! Sed, obcaecati.</p>
+        </div>
+
+        <div class="images"> 
+            <img src="../image/orange.png" alt="img-produit">
+            <img src="../image/ana.png" alt="img-produit">
+            <img src="../image/mix.png" alt="img-produit">
+            <img src="../image/jus.png" alt="img-produit">
+        </div>
     </div>
-    
+
+    <!--send_mail-->
+    <div class="background-img_input">
+        <div class="input_mail">
+            <input type="email" name="email" class="mail" placeholder="your email"></br>
+            <input type="submit" value="ENVOYE" class="send" >   
+        </div>
+    </div> 
+</section>
+
 </body>
 </html>

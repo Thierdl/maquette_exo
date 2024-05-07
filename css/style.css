@@ -1,37 +1,36 @@
-/*HEAD_STYLE
-padding-bottom: 540px;
-overflow-x: hidden;
-
-*/
+/*BODY_STYLE*/
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(216, 216, 216);
-    padding: 0;
     margin: 0;
 }
 
 
 /*NAVIGATION_STYLE*/
 .navigation {
+    position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    z-index: 1000;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 40rem 1rem 1rem;
     background-color: white;
-    box-shadow: 0 0 9px 0 rgb(116, 116, 116);
-    position: sticky;
+    box-shadow: 0 0 9px 0 rgb(116, 116, 116);  
 }
 
 .navigation .nav-items {
     display: flex;
     justify-content: space-around;
     align-items: center;
+      
 }
 
 .navigation .nav-items .logo a {
     font-size: 2.5rem;
+    font-weight: 800;
     text-decoration: none;
     color: rgb(22, 128, 66);
+
 }
 
 .navigation .nav-items .logo a span {
@@ -40,18 +39,29 @@ body{
 
 .navigation .nav-items ul {
     display: flex;
-    gap: 2rem;
-    
+    gap: 2rem; 
 }
 
 .navigation .nav-items ul li {
     list-style-type: none; 
+    
 }
 
 .navigation .nav-items ul li a {
   text-decoration: none;
   color: black;
   font-weight: 700;
+  
+}
+
+.navigation .nav-button .shop i{
+    margin: 0 1rem;
+    color: black;
+}
+
+.navigation .nav-button .abonner{
+    margin-left: 42rem;
+    margin-top: 1px;
 }
 
 .navigation .nav-button button {
@@ -61,126 +71,39 @@ body{
     color: white;
     border-radius: 5px;
     font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
+    cursor: pointer;   
 }
 
 
-
-
-
-
-
-/*
-.navigation-1{
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 3px 9px rgb(116, 116, 116);
-    margin-top: -30px ;
-    margin-left: -10px;
-    margin-right: -20px;
-}
-    
-
-
-.navigation-1 a{
-    text-decoration: none;
-}
-
-.navigation-1 h1{
-    position: relative;
-    color: rgb(22, 128, 66);
-    font-size: 40px;
-    text-align: left;
-    text-decoration: none;
-    padding: 20px;
-    
-}
-
-.navigation-1 span{
-    color: black;
-}
-
-.navigation-1 ul{
-    padding: 5px 0; 
-    float: left;
-    overflow: hidden;
-    margin-left: 170px;
-    margin-top: -80px;
-}
-
-.navigation-1 ul li {
-    font-weight: bold;
-    display: inline;
-    overflow: hidden;
-    margin: 0 20px;
-}
-
-.navigation-1 ul li a{
-    color: black;
-    
-    
-}
-
-.navigation-2 a{
-    float: right;
-    color: white;
-    background-color: rgb(22, 128, 66);
-    padding: 15px 90px;
-    border-radius: 5px;
-    margin-right: 30px;
-    margin-top: -90px;
-    cursor: pointer;
-    text-decoration: none;
-}
-*/
-
-
-
-/*BLOCKS_STYLE*/
+/*BLOCKS_STYLE_INDEX*/
+/*INDEX: blocks-1*/
 .blocks-1{
-    padding-top: 2rem;
+    padding-top: 7rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(255, 255, 255);
     margin-top: 0;
     box-shadow: 0 0 10px 0 rgb(29, 29, 29);
-    
-    
-   /*
-    position: relative;
-    display: block;
-    width: 35%;
-    text-align: left;
-    background-color: rgb(255, 255, 255);
-    padding: 150px 800px 150px 110px;
-    margin-left: -10px;
-    margin-top: -60px;
-    margin-bottom: -10px;
-   box-shadow: 0 3px 9px rgb(116, 116, 116);
-   */
-      
 }
 
-.blocks-1 .items-1 h1{
+.blocks-1 .blocks-1-A h1{
     color: rgb(0, 0, 0);
     font-size: 3rem;
 }
 
-.blocks-1 .items-1 h4{
-        color: rgb(22, 128, 66)
+.blocks-1 .blocks-1-A h2{
+    color: rgb(22, 128, 66)
+    
 }
 
-.blocks-1 .items-1 p{
+.blocks-1 .blocks-1-A p{
     color: rgb(0, 0, 0);
     line-height: 25px;
     margin-bottom: 30px;
 }
 
-.blocks-1 .items-1 a{
+.blocks-1 .blocks-1-A a{
     background-color: rgb(22, 128, 66);
     color: white;
     text-decoration: none;
@@ -188,7 +111,12 @@ body{
     border-radius: 5px;
     
 }
-/*blocks-2 style*/
+.blocks-1 .blocks-1-B img{
+    width: 30rem;
+}
+
+
+/*INDEX: blocks-2*/
 .blocks-2 {
     margin: 1rem 0 3rem 0;
     display: flex;
@@ -196,7 +124,6 @@ body{
     align-items: center;
 }
 
-/*blocks-2-A style*/
 .blocks-2 .blocks-2-A{
     background-color: white;
     padding: 2rem 0 ;
@@ -204,14 +131,12 @@ body{
     border-radius: 4%;
 }
 
-/*blocks-2-A img style*/
 .blocks-2 .blocks-2-A img {
     display: flex;
     width: 15rem;
     height: auto;
 }
 
-/*blocks-2-B style*/
 .blocks-2 .blocks-2-B{
     background-color: white;
     border-radius: 10px;
@@ -220,7 +145,6 @@ body{
     margin-right: 7rem;
 }
 
-/*blocks-2-B style*/
 .blocks-2 .blocks-2-B h1{
     color: rgba(229, 129, 7, 0.879);
     text-decoration: underline;
@@ -233,7 +157,6 @@ body{
 }
 
 
-/*blocks-2-B img style*/
 .blocks-2-B .blocks-2-B-img{
     margin-left: 6rem;
 }
@@ -250,11 +173,7 @@ body{
 }
 
 
-
-
-/*style page ABOUT*/
-
-/*produits*/
+/*STYLE_PAGE_PRODUITS*/
 .page-produits .title h1{
     color: rgb(22, 128, 66);
     text-align: center;
@@ -276,8 +195,6 @@ body{
     line-height: 3px;
     padding: 1rem 0 0 0;
     overflow-x: hidden;
-
-    
 }
 
 .page-produits .produits .aliment img{
@@ -302,23 +219,14 @@ body{
     margin-top: 2rem;
     font-size: 1rem;
     font-weight: bold;
-    cursor: pointer;
-
-    
-    
-    
+    cursor: pointer;    
 }   
 
-
-
-
-
-
-
+/*blocks_temoignage-->*/
 .background-img{
     background-image: url("../image/background.jpg");
-     
 }
+
 .background-img .temoignage{
    background-color: rgba(0, 0, 0,0.8);
 
@@ -337,9 +245,6 @@ body{
     gap: 1rem;
     padding: 0rem 0 1rem 0;
     margin: 0 18rem;
-
-    
-    
 }
 
 .background-img .temoignage .avis-client .client{
@@ -365,12 +270,193 @@ body{
     margin: 0 1rem;
 }
 
-
+/*blocks_description_et_img*/
 .image-produits{
-    margin-bottom: 5rem;
+    display: flex;
+    margin: 2rem 1rem 7rem 1rem;
+    gap: 10rem;    
+}
+  
+.image-produits .images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+}
+
+.image-produits .images img{
+    width: 100%;
+    height: auto; 
+}
+
+/*blocks_input_mail*/
+.background-img_input {
+    text-align: center;
+    background-image: url("../image/background.jpg");
+    background-color: rgba(0, 0, 0,0.8);   
+}
+
+.background-img_input .input_mail{
+    background-color: rgba(0, 0, 0,0.8);
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;   
+}
+
+.background-img_input .input_mail .mail{
+    border: none;
+    padding: 1rem 1rem;
+    margin: 0 20rem;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.background-img_input .input_mail .send {
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(22, 128, 66);
+    cursor: pointer;
+    padding: 1rem 0;
+    margin: 0 35rem;
 }
 
 
 
+/*STYLE_PAGE_SERVICE*/
+.nos_service{
+    margin: 5rem 0 2rem 0;
+    text-align: center;
+    color: rgb(22, 128, 66);
+}
+
+.nos_service .service_items{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 0 15rem;    
+}
+
+.nos_service .service_items .service {
+    border-radius: 7px;
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.5rem;
+}   
+
+.nos_service .service_items .service img{
+    width: 50%;
+    height: auto; 
+}
+
+.nos_service .service_items .service h1{
+    text-align: center;
+    color: rgb(22, 128, 66);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.nos_service .service_items .service p{
+    color: black;
+}
 
 
+
+/*STYLE_PAGE_SERVICE*/
+.background-img-contact {
+    background-image: url("../image/background.jpg");
+}
+
+.background-img-contact .background-color-contact{
+    background-color: rgb(0, 0, 0, 0.8);
+    padding-top: 1rem;
+}
+
+.background-img-contact .background-color-contact h1{
+    color: rgb(22, 128, 66);
+    text-align: center;
+}
+
+.background-img-contact .background-color-contact .formulaire {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 20rem 2rem 20rem;
+    padding-bottom: 1rem 
+}
+
+.background-img-contact .background-color-contact .formulaire .name {
+    padding: 1rem ;
+    border: none; 
+}
+
+.background-img-contact .background-color-contact .formulaire .mail {
+    padding: 1rem ;
+    border: none;
+}
+
+.background-img-contact .background-color-contact .formulaire .commentary {
+    padding:1rem 1rem 8rem 1rem ;
+    border: none;
+}
+
+.background-img-contact .background-color-contact .formulaire .send {
+    background-color: rgb(22, 128, 66);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+
+/*contacter*/
+.contact{
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+    margin-bottom: 40rem;
+}
+
+.contact .title{
+    color: white;
+    display: flex;
+    justify-content: space-around;   
+}
+
+.contact .desc {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    color: rgb(255, 255, 255);
+    padding-bottom: 3rem;
+}
+
+.contact .objectif {
+    text-align: left;
+    width: 21%;
+}
+
+.contact .objectif h2{
+    margin-left: 5rem;
+}
+
+.contact .horaire{
+    text-align: center;
+}
+
+.contact .contacter{
+    text-align: center;
+    margin-right: 11rem;
+}
+
+/*footer*/
+.contact .footer p{
+    background-color: rgb(216, 216, 216);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 3px 0.5rem 2rem 0.5rem;
+    padding: 1rem 0;
+}

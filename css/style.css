@@ -60,8 +60,11 @@ body{
 }
 
 .navigation .nav-button .abonner{
-    margin-left: 42rem;
+    display: flex;
+    margin-left: 36rem;
     margin-top: 1px;
+    gap: 2rem;
+    align-items: center;
 }
 
 .navigation .nav-button button {
@@ -74,9 +77,20 @@ body{
     cursor: pointer;   
 }
 
+.navigation .nav-button a{
+    cursor: pointer;
+    color: black;
+
+}
+
 
 /*BLOCKS_STYLE_INDEX*/
 /*INDEX: blocks-1*/
+#section_accueil{
+    box-shadow: 0 0 10px 0 rgb(29, 29, 29);
+    padding: 1px;
+}
+
 .blocks-1{
     padding-top: 7rem;
     display: flex;
@@ -84,6 +98,7 @@ body{
     align-items: center;
     background-color: rgb(255, 255, 255);
     margin-top: 0;
+    padding-bottom: 2rem;
     box-shadow: 0 0 10px 0 rgb(29, 29, 29);
 }
 
@@ -112,7 +127,7 @@ body{
     
 }
 .blocks-1 .blocks-1-B img{
-    width: 30rem;
+    width: 25rem;
 }
 
 
@@ -140,8 +155,8 @@ body{
 .blocks-2 .blocks-2-B{
     background-color: white;
     border-radius: 10px;
-    width:55%;
-    padding: 1rem 0 4rem 0;
+    width:56%;
+    padding: 2rem 0 4rem 0;
     margin-right: 7rem;
 }
 
@@ -173,7 +188,12 @@ body{
 }
 
 
+
 /*STYLE_PAGE_PRODUITS*/
+#section_produits{
+    padding-top: 5rem;
+}
+
 .page-produits .title h1{
     color: rgb(22, 128, 66);
     text-align: center;
@@ -211,12 +231,21 @@ body{
     color: rgb(204, 204, 204);
 }
 
-.page-produits .produits .aliment button{
+/*style_etoile_sur_produits*/
+.rating{
+    display: flex;
+    justify-content: center;
+    color:rgb(22, 128, 66);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.page-produits .produits .aliment .button button{
     color: white;
     background-color: rgb(22, 128, 66);
     border: none;
     padding: 1rem 6rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;    
@@ -325,8 +354,11 @@ body{
 
 
 /*STYLE_PAGE_SERVICE*/
+#section_service{
+    padding-top: 5rem;
+}
 .nos_service{
-    margin: 5rem 0 2rem 0;
+    margin-bottom: 2rem;
     text-align: center;
     color: rgb(22, 128, 66);
 }
@@ -365,24 +397,27 @@ body{
 
 
 /*STYLE_PAGE_SERVICE*/
+#section_contact{
+    padding-top: 4rem;
+}
 .background-img-contact {
     background-image: url("../image/background.jpg");
 }
 
 .background-img-contact .background-color-contact{
     background-color: rgb(0, 0, 0, 0.8);
-    padding-top: 1rem;
 }
 
 .background-img-contact .background-color-contact h1{
     color: rgb(22, 128, 66);
     text-align: center;
+    padding-top: 1rem;
 }
 
 .background-img-contact .background-color-contact .formulaire {
     display: flex;
     flex-direction: column;
-    margin: 5rem 20rem 2rem 20rem;
+    margin: 3rem 20rem 2rem 20rem;
     padding-bottom: 1rem 
 }
 
@@ -416,14 +451,15 @@ body{
 /*contacter*/
 .contact{
     background-color: rgb(0, 0, 0);
-    padding-bottom: 1rem;
-    margin-bottom: 40rem;
+    margin-bottom: 30rem;
+    padding-bottom: 1px;
 }
 
 .contact .title{
     color: white;
     display: flex;
-    justify-content: space-around;   
+    justify-content: space-around;
+    margin: 0 1rem;   
 }
 
 .contact .desc {
@@ -457,6 +493,9 @@ body{
     background-color: rgb(216, 216, 216);
     color: rgb(0, 0, 0);
     text-align: center;
-    margin: 3px 0.5rem 2rem 0.5rem;
-    padding: 1rem 0;
+    margin: 0 0.5rem;
+    padding-top: 1rem;
 }
+
+
+  

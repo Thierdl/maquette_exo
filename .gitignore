@@ -1,0 +1,10 @@
+# Ignorer l'environnement virtuel Python
+env_mq/
+
+# Ignorer les fichiers compilés Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignorer les fichiers de configuration de l'environnement virtuel
+pyvenv.cfg

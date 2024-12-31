@@ -4,7 +4,7 @@ from django.db import models
 class category(models.Model):
     pass
 
-
+#models Produits
 class Produit(models.Model):
     title = models.TextField(max_length=100)
     type_pro = models.TextField(max_length=100)
@@ -17,6 +17,15 @@ class Produit(models.Model):
     def __str__(self):
         return f"{self.title} {self.price} {self.type_pro}"
 
-
+#model Produit_add
 class save_pro(models.Model):
     pass
+
+#model_commente
+class Commentes(models.Model):
+    name = models.TextField(max_length=100)
+    email = models.EmailField()
+    text = models.TextField(max_length=500)
+
+    def __str__(self):
+        return f"{self.name}"

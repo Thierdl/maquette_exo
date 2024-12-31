@@ -121,7 +121,9 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-STATICFILES_DIRS = [BASE_DIR / "static",]
+#STATICFILES_DIRS = [BASE_DIR / "static",]
+STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static'),]
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #chemin absolu sur le server ou django va stocker les les fichier téléchargées
 
 """
 #---------------------------------------------------------
@@ -137,7 +139,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #chemin absolu sur le server ou dja
 #MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/' #url pub
 #---------------------------------------------------------
-
 """
 
 # Default primary key field type

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Produit
 
 
@@ -8,8 +8,8 @@ def index_views(request):
     return render(request, "index.html") 
 
 def views_produit(request):
-    #prods = Produit.objects.all()
-    prods = {'title':'thiakry','price':'12000'}
+    prods = Produit.objects.all()
+    #prods = {'title':'thiakry','price':'12000'}
      
     return render(request, 'index.html', {'prods':prods})
 
@@ -27,7 +27,9 @@ def create_produit(request):
             type_pro=type_pro,
             price=price
         )
-        prods = prod.save()
+        prod.save()
 
-    return render(prods)
+        return
+
+    return render()
 
